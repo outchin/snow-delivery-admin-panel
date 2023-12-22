@@ -8,7 +8,7 @@
             <div class="d-flex flex-wrap justify-content-between">
                 <h1 class="page-header-title">
                     <span class="page-header-icon">
-                        <img src="{{ asset('public/assets/admin/img/landing.png') }}" class="w--20" alt="">
+                        <img src="{{ asset('assets/admin/img/landing.png') }}" class="w--20" alt="">
                     </span>
                     <span>
                         {{ translate('messages.admin_landing_pages') }}
@@ -74,7 +74,7 @@
                                             ({{ translate('messages.default') }})<span class="form-label-secondary"
                                                 data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('Write_the_title_within_80_characters') }}">
-                                                <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                     alt="">
                                             </span></label>
                                         <input type="text" maxlength="80" name="feature_title[]"
@@ -86,7 +86,7 @@
                                             ({{ translate('messages.default') }})<span class="form-label-secondary"
                                                 data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('Write_the_title_within_240_characters') }}">
-                                                <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                     alt="">
                                             </span></label>
                                         <input type="text" maxlength="240" name="feature_short_description[]"
@@ -118,7 +118,7 @@
                                         <div class="col-sm-6">
                                             <label class="form-label">{{ translate('Title') }}
                                                 ({{ strtoupper($lang) }})<span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_80_characters') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span></label>
                                         <input type="text"  maxlength="80" name="feature_title[]"
                                                 value="{{ $feature_title_translate[$lang]['value'] ?? '' }}"
@@ -128,7 +128,7 @@
                                         <div class="col-sm-6">
                                             <label class="form-label">{{ translate('Short Description') }}
                                                 ({{ strtoupper($lang) }})<span class="form-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_240_characters') }}">
-                                                <img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="">
+                                                <img src="{{asset('assets/admin/img/info-circle.svg')}}" alt="">
                                             </span></label>
                                         <input type="text"  maxlength="240" name="feature_short_description[]"
                                                 value="{{ $feature_short_description_translate[$lang]['value'] ?? '' }}"
@@ -144,7 +144,7 @@
                                         <label class="form-label">{{ translate('Title') }}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('Write_the_title_within_80_characters') }}">
-                                                <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                     alt="">
                                             </span></label>
                                         <input type="text" maxlength="80" name="feature_title[]" class="form-control"
@@ -154,7 +154,7 @@
                                         <label class="form-label">{{ translate('Short Description') }}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('Write_the_title_within_240_characters') }}">
-                                                <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                     alt="">
                                             </span></label>
                                         <input type="text" maxlength="240" name="feature_short_description[]"
@@ -187,7 +187,7 @@
                                                         class="form-label-secondary" data-toggle="tooltip"
                                                         data-placement="right"
                                                         data-original-title="{{ translate('Write_the_title_within_20_characters') }}">
-                                                        <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                        <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                             alt="">
                                                     </span></label>
                                                 <input type="text" maxlength="20" name="title[]" class="form-control"
@@ -199,7 +199,7 @@
                                                         class="form-label-secondary" data-toggle="tooltip"
                                                         data-placement="right"
                                                         data-original-title="{{ translate('Write_the_title_within_80_characters') }}">
-                                                        <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                        <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                             alt="">
                                                     </span></label>
                                                 <input type="text" maxlength="80" name="sub_title[]"
@@ -218,7 +218,7 @@
                                                         class="form-label-secondary" data-toggle="tooltip"
                                                         data-placement="right"
                                                         data-original-title="{{ translate('Write_the_title_within_20_characters') }}">
-                                                        <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                        <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                             alt="">
                                                     </span></label>
                                                 <input type="text" maxlength="20" name="title[]" class="form-control"
@@ -230,7 +230,7 @@
                                                         class="form-label-secondary" data-toggle="tooltip"
                                                         data-placement="right"
                                                         data-original-title="{{ translate('Write_the_title_within_80_characters') }}">
-                                                        <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                        <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                             alt="">
                                                     </span></label>
                                                 <input type="text" maxlength="80" name="sub_title[]" class="form-control"
@@ -248,7 +248,7 @@
                                                         class="form-label-secondary" data-toggle="tooltip"
                                                         data-placement="right"
                                                         data-original-title="{{ translate('Write_the_title_within_50_characters') }}">
-                                                        <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                        <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                             alt="">
                                                     </span></label>
                                                 <input type="text" maxlength="50" name="title[]" class="form-control"
@@ -259,7 +259,7 @@
                                                         class="form-label-secondary" data-toggle="tooltip"
                                                         data-placement="right"
                                                         data-original-title="{{ translate('Write_the_title_within_50_characters') }}">
-                                                        <img src="{{ asset('public/assets/admin/img/info-circle.svg') }}"
+                                                        <img src="{{ asset('assets/admin/img/info-circle.svg') }}"
                                                             alt="">
                                                     </span></label>
                                                 <input type="text" maxlength="50" name="sub_title[]"
@@ -324,13 +324,13 @@
                                 <span class="dropdown-header">{{ translate('messages.download_options') }}</span>
                                 <a id="export-excel" class="dropdown-item" href="{{route('admin.store.export', ['type'=>'excel',request()->getQueryString()])}}">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{ asset('public/assets/admin') }}/svg/components/excel.svg"
+                                        src="{{ asset('assets/admin') }}/svg/components/excel.svg"
                                         alt="Image Description">
                                     {{ translate('messages.excel') }}
                                 </a>
                                 <a id="export-csv" class="dropdown-item" href="{{route('admin.store.export', ['type'=>'csv',request()->getQueryString()])}}">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{ asset('public/assets/admin') }}/svg/components/placeholder-csv-format.svg"
+                                        src="{{ asset('assets/admin') }}/svg/components/placeholder-csv-format.svg"
                                         alt="Image Description">
                                     .{{ translate('messages.csv') }}
                                 </a>

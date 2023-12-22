@@ -16,6 +16,7 @@ Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function () {
         Route::get('/get-store-data', 'SystemController@store_data')->name('get-store-data');
         Route::post('remove_image', 'BusinessSettingsController@remove_image')->name('remove_image');
         //dashboard
+
         Route::get('/', 'DashboardController@dashboard')->name('dashboard');
 
         // Route::resource('account-transaction', 'AccountTransactionController')->middleware('module:collect_cash');

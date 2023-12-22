@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('/public/assets/admin/img/payment.png')}}" class="w--22" alt="">
+                    <img src="{{asset('assets/admin/img/payment.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{translate('messages.payment_gateway_setup')}}
@@ -24,7 +24,7 @@
                 <div class="blinkings trx_top active">
                     <i class="tio-info-outined"></i>
                     <div class="business-notes">
-                        <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                        <h6><img src="{{asset('assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                         <div>
                             {{translate('Without configuring this section functionality will not work properly. Thus the whole system will not work as it planned')}}
                         </div>
@@ -36,7 +36,7 @@
         <div class="card border-0">
             <div class="card-header card-header-shadow">
                 <h5 class="card-title align-items-center">
-                    <img src="{{asset('/public/assets/admin/img/payment-method.png')}}" class="mr-1" alt="">
+                    <img src="{{asset('assets/admin/img/payment-method.png')}}" class="mr-1" alt="">
                     {{translate('Payment Method')}}
                 </h5>
             </div>
@@ -121,7 +121,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/sslcommerz.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/sslcommerz.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" name="store_id" placeholder="Store ID" value="{{env('APP_MODE')!='demo'?($config?$config['store_id']:''):''}}">
@@ -158,7 +158,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/paypal.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/paypal.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <label for="mode">{{ translate('messages.select_payment_mode') }}</label>
@@ -204,7 +204,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/razorpay.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/razorpay.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Razor Key" name="razor_key"
@@ -242,7 +242,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/stripe.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/stripe.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Publish Key" name="published_key"
@@ -282,7 +282,7 @@
                         </h5>
                         <span class="badge badge-soft-danger">{{translate('messages.paystack_callback_warning')}}</span>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/paystack.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/paystack.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="publicKey"
@@ -338,7 +338,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/senang-pay.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/senang-pay.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Secret Key" name="secret_key"
@@ -385,7 +385,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/flutterwave.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/flutterwave.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="public_key"
@@ -436,7 +436,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/mercador-pago.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/mercador-pago.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="public_key"
@@ -484,7 +484,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/paymob.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/paymob.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <label class="{{Session::get('direction') === 'rtl' ? 'pr-3' : 'pl-3'}}">{{translate('messages.callback')}}</label>
@@ -547,7 +547,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/bkash.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/bkash.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Api Key" name="api_key"
@@ -603,7 +603,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/paytabs.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/paytabs.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Profile Id" name="profile_id"
@@ -655,7 +655,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/paytm.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/paytm.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Paytm Merchant Key" name="paytm_merchant_key"
@@ -706,7 +706,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/public/assets/admin/img/payment/liqpay.png')}}" alt="public">
+                            <img src="{{asset('assets/admin/img/payment/liqpay.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="public_key"
@@ -748,7 +748,7 @@
                 </div>
                 <div class="modal-body pt-0">
                     <div class="text-center mb-20">
-                        <img src="{{asset('/public/assets/admin/img/cod.png')}}" alt="" class="mb-20">
+                        <img src="{{asset('assets/admin/img/cod.png')}}" alt="" class="mb-20">
                         <h5 class="modal-title">{{translate('By Turning OFF Cash On Delivery Option')}}</h5>
                         <p>{{translate("Customers will not be able to select COD as a payment method during checkout. Please review your settings and enable COD if you wish to offer this payment option to customers.")}}</p>
                     </div>

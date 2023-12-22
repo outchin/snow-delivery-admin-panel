@@ -32,7 +32,7 @@
                     <div class="card mb-3">
                         <div class="card-header card-header-shadow">
                             <h5 class="card-title d-flex align-items-center">
-                                <img src="{{asset('/public/assets/admin/img/wallet-icon.png')}}" alt="" class="card-header-icon align-self-center mr-1">
+                                <img src="{{asset('assets/admin/img/wallet-icon.png')}}" alt="" class="card-header-icon align-self-center mr-1">
                                 <span>
                                     {{translate('Wallet')}}
                                 </span>
@@ -96,7 +96,7 @@
                     <div class="card mb-3">
                         <div class="card-header card-header-shadow">
                             <h5 class="card-title d-flex align-items-center">
-                                <img src="{{asset('/public/assets/admin/img/referral.png')}}" alt="" class="card-header-icon align-self-center mr-1">
+                                <img src="{{asset('assets/admin/img/referral.png')}}" alt="" class="card-header-icon align-self-center mr-1">
                                 <span class="pr-2">
                                     {{ translate('Referral Earning') }}
                                 </span>
@@ -165,7 +165,7 @@
                     <div class="card mb-3">
                         <div class="card-header card-header-shadow">
                             <h5 class="card-title">
-                                <img src="{{asset('/public/assets/admin/img/loyalty.png')}}" alt="" class="card-header-icon align-self-center mr-1">
+                                <img src="{{asset('assets/admin/img/loyalty.png')}}" alt="" class="card-header-icon align-self-center mr-1">
                                 <span>
                                     {{ translate('Loyalty Point') }}
                                 </span>

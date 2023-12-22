@@ -202,6 +202,7 @@ class DashboardController extends Controller
 
     public function dashboard(Request $request)
     {
+
         $params = [
             'zone_id' => $request['zone_id'] ?? 'all',
             'module_id' => Config::get('module.current_module_id'),
@@ -220,6 +221,7 @@ class DashboardController extends Controller
         if($module_type == 'settings'){
             return redirect()->route('admin.business-settings.business-setup');
         }
+
         return view("admin-views.dashboard-{$module_type}", compact('data', 'total_sell', 'commission', 'delivery_commission', 'label','params','module_type'));
 
     }

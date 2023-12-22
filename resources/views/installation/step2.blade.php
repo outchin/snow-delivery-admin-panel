@@ -45,19 +45,19 @@
                                               data-bs-html="true"
                                               data-bs-title="The username of your codecanyon account">
                                                     <img
-                                                        src="{{asset('public/assets/installation')}}/assets/img/svg-icons/info2.svg"
+                                                        src="{{asset('assets/installation')}}/assets/img/svg-icons/info2.svg"
                                                         class="svg" alt="">
                                                 </span>
                                     </label>
                                     <input type="text" id="username" class="form-control" name="username"
-                                           placeholder="Ex: Mahmoud" required>
+                                           placeholder="Ex: Mahmoud">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="from-group">
                                     <label for="purchase_key" class="mb-2">Purchase Code</label>
                                     <input type="text" id="purchase_key" class="form-control" name="purchase_key"
-                                           placeholder="Ex: 19xxxxxx-ca5c-49c2-83f6-696a738b0000" required>
+                                           placeholder="Ex: 19xxxxxx-ca5c-49c2-83f6-696a738b0000">
                                 </div>
                             </div>
                         </div>

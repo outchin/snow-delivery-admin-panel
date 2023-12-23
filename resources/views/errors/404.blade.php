@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{asset('assets/admin')}}/vendor/icon-set/style.css">
 
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/css/theme.minc619.css?v=1.0')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/css/style.css')}}">
 </head>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="col-sm-6 col-md-4 text-center text-sm-left">
-                <h1 class="display-1 mb-0">404-3</h1>
+                <h1 class="display-1 mb-0">404-4</h1>
                 <p class="lead">{{translate('messages.404_warning_message')}}.</p>
                 @if(auth('vendor')->check())
                     <a class="btn btn-primary" href="{{route('vendor.dashboard')}}">{{translate('messages.dashboard')}}</a>

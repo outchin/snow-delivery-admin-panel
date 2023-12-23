@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/payment.png')}}" class="w--22" alt="">
+                    <img src="{{asset('/public/assets/admin/img/payment.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{translate('messages.payment_gateway_setup')}}
@@ -24,7 +24,7 @@
                 <div class="blinkings trx_top active">
                     <i class="tio-info-outined"></i>
                     <div class="business-notes">
-                        <h6><img src="{{asset('assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                        <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                         <div>
                             {{translate('Without configuring this section functionality will not work properly. Thus the whole system will not work as it planned')}}
                         </div>
@@ -36,7 +36,7 @@
         <div class="card border-0">
             <div class="card-header card-header-shadow">
                 <h5 class="card-title align-items-center">
-                    <img src="{{asset('assets/admin/img/payment-method.png')}}" class="mr-1" alt="">
+                    <img src="{{asset('/public/assets/admin/img/payment-method.png')}}" class="mr-1" alt="">
                     {{translate('Payment Method')}}
                 </h5>
             </div>
@@ -149,7 +149,7 @@
                             <div class="card-body">
                                 <div class="payment--gateway-img">
                                     <img style="height: 80px" id="{{$payment->key_name}}-image-preview"
-                                    onerror="this.src='{{asset('assets/admin/img/payment/placeholder.png')}}'"
+                                    onerror="this.src='{{asset('/public/assets/admin/img/payment/placeholder.png')}}'"
                                     src="{{asset('storage/app/public/payment_modules/gateway_image')}}/{{$additional_data != null ? $additional_data->gateway_image : ''}}"
                                          alt="public">
                                 </div>
@@ -217,7 +217,7 @@
                 </div>
                 <div class="modal-body pt-0">
                     <div class="text-center mb-20">
-                        <img src="{{asset('assets/admin/img/cod.png')}}" alt="" class="mb-20">
+                        <img src="{{asset('/public/assets/admin/img/cod.png')}}" alt="" class="mb-20">
                         <h5 class="modal-title">{{translate('By Turning OFF Cash On Delivery Option')}}</h5>
                         <p>{{translate("Customers will not be able to select COD as a payment method during checkout. Please review your settings and enable COD if you wish to offer this payment option to customers.")}}</p>
                     </div>

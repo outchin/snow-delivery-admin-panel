@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('assets/admin/img/banner.png')}}" class="w--26" alt="">
+                    <img src="{{asset('public/assets/admin/img/banner.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.add_new_banner')}}
@@ -134,7 +134,7 @@
                                         <label class="mt-auto mb-0 d-block text-center">{{translate('messages.banner_image')}} <small class="text-danger">* ( {{translate('messages.ratio')}} 3:1 )</small></label>
                                         <center class="py-3 my-auto">
                                             <img class="img--vertical" id="viewer"
-                                                src="{{asset('assets/admin/img/900x400/img1.jpg')}}" alt="banner image"/>
+                                                src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="banner image"/>
                                         </center>
                                         <div class="custom-file">
                                             <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -373,7 +373,7 @@
                 },
                 language: {
                     zeroRecords: '<div class="text-center p-4">' +
-                    '<img class="w-7rem mb-3" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">' +
+                    '<img class="w-7rem mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">' +
 
                     '</div>'
                 }
@@ -499,7 +499,7 @@
                 $('#zone').val(null).trigger('change');
                 $('#store_id').val(null).trigger('change');
                 $('#choice_item').val(null).trigger('change');
-                $('#viewer').attr('src','{{asset('assets/admin/img/900x400/img1.jpg')}}');
+                $('#viewer').attr('src','{{asset('public/assets/admin/img/900x400/img1.jpg')}}');
             })
         </script>
             <script>

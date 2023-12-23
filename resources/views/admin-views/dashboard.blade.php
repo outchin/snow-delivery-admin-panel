@@ -479,7 +479,7 @@
         $('.js-chart').each(function () {
             $.HSCore.components.HSChartJS.init($(this));
         });
-
+        Manage Your  Daily Life in our platform
         var updatingChart = $.HSCore.components.HSChartJS.init($('#updatingData'));
     </script>
 

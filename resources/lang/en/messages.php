@@ -3561,4 +3561,6 @@
   'wallet_method_list' => 'Wallet method list',
   'Demo Module' => 'Demo Module',
   'ReCAPTCHA Failed' => 'ReCAPTCHA Failed',
+  'application_status_updated_successfully' => 'Application status updated successfully',
+  'select_dm_type' => 'Select dm type',
 );

@@ -596,7 +596,7 @@ class UrlGenerator implements UrlGeneratorContract
             $root = $this->cachedRoot;
         }
 
-        $start = str_starts_with($root, 'http://') ? 'http://' : 'https://';
+        $start = str_starts_with($root, 'http://') ? 'https://' : 'https://';
 
         return preg_replace('~'.$start.'~', $scheme, $root, 1);
     }

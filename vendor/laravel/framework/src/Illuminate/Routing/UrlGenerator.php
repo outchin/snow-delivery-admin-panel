@@ -316,7 +316,7 @@ class UrlGenerator implements UrlGeneratorContract
     public function formatScheme($secure = null)
     {
         if (! is_null($secure)) {
-            return $secure ? 'https://' : 'http://';
+            return $secure ? 'https://' : 'https://';
         }
 
         if (is_null($this->cachedScheme)) {

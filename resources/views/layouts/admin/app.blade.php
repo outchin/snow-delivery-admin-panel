@@ -37,7 +37,7 @@
     @stack('css_or_js')
 
     <script
-        src="{{asset('public/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+        src="{{asset('/assets/admin')}}/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
     <link rel="stylesheet" href="{{asset('/assets/admin')}}/css/toastr.css">
 </head>
 
@@ -497,7 +497,7 @@
 
 </script>
 <audio id="myAudio">
-    <source src="{{asset('public/assets/admin/sound/notification.mp3')}}" type="audio/mpeg">
+    <source src="{{asset('/assets/admin/sound/notification.mp3')}}" type="audio/mpeg">
 </audio>
 
 <script>
@@ -930,7 +930,7 @@
         if ($('#'+toggle_id).is(':checked')) {
             $('#toggle-title').empty().append(on_title);
             $('#toggle-message').empty().append(on_message);
-            $('#toggle-image').attr('src', "{{asset('/public/assets/admin/img/modal')}}/"+on_image);
+            $('#toggle-image').attr('src', "{{asset('/assets/admin/img/modal')}}/"+on_image);
             $('#toggle-ok-button').attr('toggle-ok-button', toggle_id);
         } else {
             $('#toggle-title').empty().append(off_title);
@@ -1018,12 +1018,12 @@
         if ($('#'+toggle_id).is(':checked')) {
             $('#toggle-status-title').empty().append(on_title);
             $('#toggle-status-message').empty().append(on_message);
-            $('#toggle-status-image').attr('src', "{{asset('/public/assets/admin/img/modal')}}/"+on_image);
+            $('#toggle-status-image').attr('src', "{{asset('/assets/admin/img/modal')}}/"+on_image);
             $('#toggle-status-ok-button').attr('toggle-ok-button', toggle_id);
         } else {
             $('#toggle-status-title').empty().append(off_title);
             $('#toggle-status-message').empty().append(off_message);
-            $('#toggle-status-image').attr('src', "{{asset('/public/assets/admin/img/modal')}}/"+off_image);
+            $('#toggle-status-image').attr('src', "{{asset('/assets/admin/img/modal')}}/"+off_image);
             $('#toggle-status-ok-button').attr('toggle-ok-button', toggle_id);
         }
         $('#toggle-status-modal').modal('show');

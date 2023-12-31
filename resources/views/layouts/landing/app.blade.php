@@ -9,6 +9,7 @@
     //     $landing_site_direction = \App\Models\BusinessSetting::where('key', 'landing_site_direction')->first();
     //     $landing_site_direction = $landing_site_direction->value ?? 'ltr';
     // }
+    // }
 
 ?>
 <html dir="{{ $landing_site_direction }}" lang="{{ str_replace('_', '-', app()->getLocale()) }}">

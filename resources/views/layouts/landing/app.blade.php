@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/landing/css/main.css') }}"/>
 
     @php($icon = \App\Models\BusinessSetting::where(['key' => 'icon'])->first()->value ?? '')
-    <link rel="icon" type="image/x-icon" href="{{ asset('storage/app/business/' . $icon ?? asset('/assets/landing/img/favicon.svg')) }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('storage/app/public/business/' . $icon ?? asset('public/assets/landing/img/favicon.svg')) }}">
     @stack('css_or_js')
     @php($backgroundChange = \App\Models\BusinessSetting::where(['key' => 'backgroundChange'])->first())
     @php($backgroundChange = isset($backgroundChange) && $backgroundChange->value ? json_decode($backgroundChange->value,true):'')
@@ -62,8 +62,8 @@
                     @php($logo = \App\Models\BusinessSetting::where(['key' => 'logo'])->first()->value ?? '')
                     <a href="{{route('home')}}" class="logo">
                         <img
-                        onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
-                    src="{{ asset('storage/app//business/' . $fav) }}" alt="">
+                        onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                    src="{{ asset('storage/app/public/business/' . $fav) }}" alt="">
                     </a>
                     <ul class="menu">
                         <li>
@@ -210,8 +210,8 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a class="logo">
-                                <img onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
-                            src="{{ asset('storage/app//business/' . $logo) }}" alt="">
+                                <img onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                            src="{{ asset('storage/app/public/business/' . $logo) }}" alt="">
                             </a>
                         </div>
                         <div class="txt">
@@ -223,7 +223,7 @@
                                 @foreach ($social_media as $social)
                                 <li>
                                     <a href="{{ $social->link }}" target="_blank">
-                                        <img src="{{ asset('/assets/landing/img/footer/'. $social->name.'.svg') }}" alt="">
+                                        <img src="{{ asset('public/assets/landing/img/footer/'. $social->name.'.svg') }}" alt="">
                                     </a>
                                 </li>
                                 @endforeach
@@ -235,12 +235,12 @@
                         <div class="app-btn-grp">
                             @if (isset($landing_page_links['playstore_url_status']))
                             <a href="{{ isset($landing_page_links['playstore_url']) ? $landing_page_links['playstore_url'] : '' }}">
-                                <img src="{{ asset('/assets/landing/img/google.svg') }}" alt="">
+                                <img src="{{ asset('public/assets/landing/img/google.svg') }}" alt="">
                             </a>
                             @endif
                             @if (isset($landing_page_links['apple_store_url_status']))
                             <a href="{{ isset($landing_page_links['apple_store_url']) ? $landing_page_links['apple_store_url'] : '' }}">
-                                <img src="{{ asset('/assets/landing/img/apple.svg') }}" alt="">
+                                <img src="{{ asset('public/assets/landing/img/apple.svg') }}" alt="">
                             </a>
                             @endif
                         </div>

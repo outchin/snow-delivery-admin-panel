@@ -25,13 +25,22 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">
+{{--    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">--}}
+{{--    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">--}}
+{{--    <!-- CSS Front Template -->--}}
+{{--    <link rel="stylesheet" href="{{asset('public/assets/admin/css/bootstrap.min.css')}}">--}}
+{{--    <link rel="stylesheet" href="{{asset('public/assets/admin/css/theme.minc619.css?v=1.0')}}">--}}
+{{--    <link rel="stylesheet" href="{{asset('public/assets/admin/css/style.css')}}">--}}
+{{--    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">--}}
+
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/css/vendor.min.css">
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/vendor/icon-set/style.css">
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/theme.minc619.css?v=1.0')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/toastr.css">
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/css/style.css">
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/css/toastr.css">
+
 </head>
 
 <body>
@@ -287,11 +296,17 @@
     </div>
   </div>
 <!-- JS Implementing Plugins -->
-<script src="{{asset('public/assets/admin')}}/js/vendor.min.js"></script>
+{{--<script src="{{asset('public/assets/admin')}}/js/vendor.min.js"></script>--}}
+
+{{--<!-- JS Front -->--}}
+{{--<script src="{{asset('public/assets/admin')}}/js/theme.min.js"></script>--}}
+{{--<script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>--}}
+<script src="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/js/vendor.min.js"></script>
 
 <!-- JS Front -->
-<script src="{{asset('public/assets/admin')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>
+<script src="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/js/theme.min.js"></script>
+<script src="https://d20jjxed5popc9.cloudfront.net/public/assets/admin/js/toastr.js"></script>
+
 {!! Toastr::message() !!}
 
 @if ($errors->any())

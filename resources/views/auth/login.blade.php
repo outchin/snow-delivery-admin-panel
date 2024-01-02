@@ -21,7 +21,7 @@
     <title>{{translate('messages.login')}}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{asset('public/favicon.ico')}}">
+    <link rel="shortcut icon" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/img/favicon.svg">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">

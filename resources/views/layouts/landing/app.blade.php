@@ -16,13 +16,13 @@
 
 <head>
 {{--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">--}}
-{{--    <meta charset="UTF-8" />--}}
-{{--    <meta http-equiv="X-UA-Compatible" content="IE=edge" />--}}
-{{--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />--}}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Required Meta Tags Always Come First -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{--    <meta charset="utf-8">--}}
+{{--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">--}}
     <title>@yield('title')</title>
 
 {{--    <link rel="stylesheet" href="{{ asset('/assets/landing/css/bootstrap.min.css') }}" />--}}
@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/main.css" />
 
     @php($icon = \App\Models\BusinessSetting::where(['key' => 'icon'])->first()->value ?? '')
-    <link rel="icon" type="image/x-icon" href="{{ asset('/assets/storage/app/public/business/' . $icon ?? asset('/assets/landing/img/favicon.svg')) }}">
+    <link rel="icon" type="image/x-icon" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/img/favicon.svg">
     @stack('css_or_js')
     @php($backgroundChange = \App\Models\BusinessSetting::where(['key' => 'backgroundChange'])->first())
     @php($backgroundChange = isset($backgroundChange) && $backgroundChange->value ? json_decode($backgroundChange->value,true):'')

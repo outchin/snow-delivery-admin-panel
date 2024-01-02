@@ -1897,7 +1897,7 @@
                     <div class="owl-theme owl-carousel" id="sync2">
                         @foreach ($modules as $key => $item)
                         <div class="item">
-                            <img class="__img-50" src="{{ asset('/assets/storage/app/public/module/') }}/{{ isset($item['icon']) ? $item['icon'] : null }}" onerror="this.src='{{asset('/assets/public/assets/admin/img/100x100/2.png')}}'" alt="">
+                            <img class="__img-50" src="{{ asset('/assets/storage/app/public/module/') }}/{{ isset($item['icon']) ? $item['icon'] : null }}" onerror="this.src='https://d20jjxed5popc9.cloudfront.net/assets/admin/img/100x100/2.png'" alt="">
                             <div class="txt d-block">{{translate("messages.{$item->module_name}")}}</div>
                         </div>
                         @endforeach
@@ -1916,7 +1916,7 @@
                         </div>
                         <div class="col-lg-6 col-md-8">
                             <div class="venture-img mx-1">
-                                <img src="{{ asset('/assets/storage/app/public/module/') }}/{{ isset($item['thumbnail']) ? $item['thumbnail'] : null }}" onerror="this.src='{{asset('/assets/public/assets/admin/img/100x100/2.png')}}'" alt="">
+                                <img src="{{ asset('/assets/storage/app/public/module/') }}/{{ isset($item['thumbnail']) ? $item['thumbnail'] : null }}" onerror="this.src='https://d20jjxed5popc9.cloudfront.net/assets/admin/img/100x100/2.png'" alt="">
                             </div>
                         </div>
                     </div>

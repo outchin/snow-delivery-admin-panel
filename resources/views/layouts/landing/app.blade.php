@@ -337,14 +337,21 @@
         </div>
     </footer>
     <!-- ======= Footer Section ======= -->
-    <script src="{{ asset('/assets/landing/js/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('/assets/landing/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/assets/landing/js/viewport.jquery.js') }}"></script>
-    <script src="{{ asset('/assets/landing/js/wow.min.js') }}"></script>
-    <script src="{{ asset('/assets/landing/js/odometer.min.js') }}"></script>
-    <script src="{{ asset('/assets/landing/js/owl.min.js') }}"></script>
-    <script src="{{ asset('/assets/landing/js/main.js') }}"></script>
-    <script src="{{ asset('/assets/admin') }}/js/toastr.js"></script>
+{{--    <script src="{{ asset('/assets/landing/js/jquery-3.6.0.min.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/landing/js/bootstrap.min.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/landing/js/viewport.jquery.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/landing/js/wow.min.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/landing/js/odometer.min.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/landing/js/owl.min.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/landing/js/main.js') }}"></script>--}}
+{{--    <script src="{{ asset('/assets/admin') }}/js/toastr.js"></script>--}}
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/customize-animate.css" />
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/odometer.css" />
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/owl.min.css" />
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/admin/css/toastr.css" />
+    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/main.css" />
+
     {!! Toastr::message() !!}
     @if ($errors->any())
         <script>

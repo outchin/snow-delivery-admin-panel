@@ -25,20 +25,20 @@
 {{--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">--}}
     <title>@yield('title')</title>
 
-{{--    <link rel="stylesheet" href="{{ asset('/assets/landing/css/bootstrap.min.css') }}" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('/assets/landing/css/customize-animate.css') }}" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('/assets/landing/css/odometer.css') }}" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('/assets/landing/css/owl.min.css') }}" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('/assets/admin/css/toastr.css') }}">--}}
-{{--    <link rel="stylesheet" href="{{ asset('/assets/landing/css/main.css') }}"/>--}}
+    <link rel="stylesheet" href="{{ asset('/assets/landing/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/assets/landing/css/customize-animate.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/assets/landing/css/odometer.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/assets/landing/css/owl.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/assets/admin/css/toastr.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/landing/css/main.css') }}"/>
 
 
-    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/customize-animate.css" />
-    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/odometer.css" />
-    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/owl.min.css" />
-    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/admin/css/toastr.css" />
-    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/main.css" />
+{{--    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/bootstrap.min.css" />--}}
+{{--    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/customize-animate.css" />--}}
+{{--    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/odometer.css" />--}}
+{{--    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/owl.min.css" />--}}
+{{--    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/admin/css/toastr.css" />--}}
+{{--    <link rel="stylesheet" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/css/main.css" />--}}
 
     @php($icon = \App\Models\BusinessSetting::where(['key' => 'icon'])->first()->value ?? '')
     <link rel="icon" type="image/x-icon" href="https://d20jjxed5popc9.cloudfront.net/assets/landing/img/favicon.svg">
@@ -337,22 +337,22 @@
         </div>
     </footer>
     <!-- ======= Footer Section ======= -->
-{{--    <script src="{{ asset('/assets/landing/js/jquery-3.6.0.min.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/landing/js/bootstrap.min.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/landing/js/viewport.jquery.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/landing/js/wow.min.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/landing/js/odometer.min.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/landing/js/owl.min.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/landing/js/main.js') }}"></script>--}}
-{{--    <script src="{{ asset('/assets/admin') }}/js/toastr.js"></script>--}}
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/jquery-3.6.0.min.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/bootstrap.min.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/viewport.jquery.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/wow.min.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/odometer.min.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/owl.min.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/main.js"></script>
-    <script src="https://d20jjxed5popc9.cloudfront.net/assets/admin/js/toastr.js"></script>
+    <script src="{{ asset('/assets/landing/js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('/assets/landing/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/assets/landing/js/viewport.jquery.js') }}"></script>
+    <script src="{{ asset('/assets/landing/js/wow.min.js') }}"></script>
+    <script src="{{ asset('/assets/landing/js/odometer.min.js') }}"></script>
+    <script src="{{ asset('/assets/landing/js/owl.min.js') }}"></script>
+    <script src="{{ asset('/assets/landing/js/main.js') }}"></script>
+    <script src="{{ asset('/assets/admin') }}/js/toastr.js"></script>
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/jquery-3.6.0.min.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/bootstrap.min.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/viewport.jquery.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/wow.min.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/odometer.min.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/owl.min.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/landing/js/main.js"></script>--}}
+{{--    <script src="https://d20jjxed5popc9.cloudfront.net/assets/admin/js/toastr.js"></script>--}}
 
 
     {!! Toastr::message() !!}
